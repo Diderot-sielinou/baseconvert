@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/convert.css">
+  <title>convert</title>
+</head>
+<body>
+  <div class="container">
+    <div class="result">
+      <h2 id="resultat"></h2>
+    </div>
+    <div class="convertoption">
+      <div>
+        <label for="number">number:</label>
+        <input type="number" id="number" placeholder="enter number to convert" autocomplete="off">
+      </div>
+      <div>
+        <label for="starbase"> from base:</label>
+        <select name="start" id="startbase">
+          <option value=""></option>
+          <option value="10" >decimal(10)</option>
+          <option value="2">binary(2)</option>
+          <option value="16">hexadecimal(16)</option>
+          <option value="8">octal(8)</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="endbase">towards the base</label>
+        <select name="end" id="endbase">
+          <option value="10" selected>decimal(10)</option>
+          <option value="2">binary(2)</option>
+          <option value="16">hexadecimal(16)</option>
+          <option value="8">octal(8)</option>
+        </select>
+      </div>
+
+      <div>
+        <button id="btn">convert</button>
+        <button id="delet">delete</button>
+      </div>
+    </div>
+  </div>
+  <script src="JS/convert.js"></script>
+</body>
+</html>
